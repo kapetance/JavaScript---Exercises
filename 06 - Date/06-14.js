@@ -13,5 +13,5 @@ console.log(days_of_a_year(2016));
         return ((Date.parse(String(this + 1)) - Date.parse(String(this))) / (1000 * 60 * 60 * 24));
     }
     console.log(daysYear.call(2015));
-    console.log(daysYear.call(2016));
+    console.log(daysYear.call(2017));
 })();
