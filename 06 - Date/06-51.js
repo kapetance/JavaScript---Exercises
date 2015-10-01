@@ -1,0 +1,3 @@
+/*
+Write a JavaScript function to get the week end date
+*/
