@@ -5,3 +5,12 @@ dt = new Date(2015, 10, 1);
 console.log(full_year(dt)); 
 2015
 */
+
+"use strict";
+(function () {
+    function fullYear(pickedDate) {
+        return pickedDate.getFullYear();
+    }
+
+    console.log(fullYear(new Date(2015, 10, 1)));
+})();
