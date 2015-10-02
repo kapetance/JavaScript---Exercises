@@ -1,5 +1,5 @@
 /*
-Write a JavaScript function to test whether a date is a weekend. Go to the editor
+Write a JavaScript function to test whether a date is a weekend. 
 
 Note : Use standard Saturday/Sunday definition of a weekend.
 Test Data :
