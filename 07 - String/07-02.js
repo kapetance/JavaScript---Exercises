@@ -7,3 +7,14 @@ true
 false
 Click me to see the solution
 */
+
+"use strict";
+(function () {
+    function isBlank(picked) {
+        if (typeof picked === "string") {
+            return !(picked);
+        }
+    }
+    console.log(isBlank(''));
+    console.log(isBlank('abc'));
+})();

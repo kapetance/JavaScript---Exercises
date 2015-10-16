@@ -4,3 +4,18 @@ Test Data :
 console.log(swapcase('AaBbc'));
 "aAbBC"
 */
+"use strict";
+(function () {
+    function swapcase(pickedString) {
+        pickedString = pickedString.split("");
+        var finalString = pickedString.map(function (x) {
+            if (x.toLowerCase() === x) {
+                return x.toUpperCase();
+            } else {
+                return x.toLowerCase();
+            }
+        });
+        return finalString.join("");
+    }
+    console.log(swapcase('AaBbc'));
+})();

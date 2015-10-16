@@ -1,7 +1,13 @@
 /*
-Write a JavaScript function to split a string and convert it into an array of words. 
+Write a JavaScript function to remove specified number of characters from a string. 
 Test Data :
-console.log(string_to_array("Robin Singh"));
-["Robin", "Singh"]
-Click me to see the solution
+console.log(truncate_string("Robin Singh",4));
+"Robi"
 */
+"use strict";
+(function () {
+    function truncateString(pickedString, numberOfChars) {
+        return pickedString.substr(0, numberOfChars);
+    }
+    console.log(truncateString("Robin Singh", 4));
+})();
