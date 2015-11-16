@@ -5,3 +5,10 @@ According to Wikipedia : In mathematics, the Pythagorean theorem, also known as 
 Test Data :
 console.log(pythagorean(4, 3));
 5  */
+"use strict";
+(function () {
+    function pythagorean(a, b) {
+        return Math.sqrt(a * a + b * b);
+    }
+    console.log(pythagorean(3, 4));
+})();
