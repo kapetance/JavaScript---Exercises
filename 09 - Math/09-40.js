@@ -1,0 +1,1 @@
+/* Write a JavaScript function to create random background color. */
