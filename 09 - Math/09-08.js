@@ -8,3 +8,16 @@ console.log(gcd_two_numbers(9, 3));
 Output :
 1
 3 */
+"use strict";
+(function () {
+    function gcdTwoNumbers(x, y) {
+        var gcd = Math.min(x, y);
+        while (!(x % gcd === 0 && y % gcd === 0)) {
+            gcd--;
+        }
+        return gcd;
+    }
+    console.log(gcdTwoNumbers(12, 13));
+    console.log(gcdTwoNumbers(9, 3));
+    console.log(gcdTwoNumbers(8, 12));
+})();
