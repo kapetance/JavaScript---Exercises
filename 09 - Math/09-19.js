@@ -6,3 +6,11 @@ console.log(pythagorean_theorem(3, 4));
 Output :
 4.47213595499958
 5*/
+"use strict";
+(function () {
+    function pythagorean(a, b) {
+        return Math.sqrt(a * a + b * b);
+    }
+    console.log(pythagorean(2, 4));
+    console.log(pythagorean(3, 4));
+})();
