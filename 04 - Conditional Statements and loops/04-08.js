@@ -5,7 +5,16 @@ Write a JavaScript program to find and print the first 5 happy numbers.
 */
 "use strict";
 (function () {
-    Number.prototype.numberToArray = function () {
+    function sumSquares(pickedNumber) {
+        var tempNum = pickedNumber;
+        var tempSum = 0;
+        while (tempNum >= 1) {
+            tempSum = tempSum + (tempNum % 10) * (tempNum % 10);
+            tempNum = Math.floor(tempNum / 10);
+        }
+        return tempSum;
+    }
+    /*Number.prototype.numberToArray = function () {
         //Create array from number
         var that = this;
         var tempArray = [];
@@ -23,7 +32,7 @@ Write a JavaScript program to find and print the first 5 happy numbers.
         }).reduce(function (a, b) {
             return a + b;
         });
-    }
+    }*/
 
     function checkNumber(pickedNumber) {
         function test(tempNumber) { //Recursion
@@ -55,6 +64,6 @@ Write a JavaScript program to find and print the first 5 happy numbers.
         }
         console.log(happyArray);
     }
-    
+
     return findHappies;
 })()(10);
