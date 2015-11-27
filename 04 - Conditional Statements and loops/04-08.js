@@ -14,25 +14,6 @@ Write a JavaScript program to find and print the first 5 happy numbers.
         }
         return tempSum;
     }
-    /*Number.prototype.numberToArray = function () {
-        //Create array from number
-        var that = this;
-        var tempArray = [];
-        while (that >= 1) {
-            tempArray.unshift(that % 10);
-            that = Math.floor(that / 10);
-        }
-        return tempArray;
-    };
-
-    function sumSquares(pickedNumber) {
-        //Suming squares of number elements
-        return pickedNumber.numberToArray().map(function (a) {
-            return a * a;
-        }).reduce(function (a, b) {
-            return a + b;
-        });
-    }*/
 
     function checkNumber(pickedNumber) {
         function test(tempNumber) { //Recursion
