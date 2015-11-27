@@ -6,11 +6,10 @@ Write a JavaScript program to find and print the first 5 happy numbers.
 "use strict";
 (function () {
     function sumSquares(pickedNumber) {
-        var tempNum = pickedNumber;
         var tempSum = 0;
-        while (tempNum >= 1) {
-            tempSum = tempSum + (tempNum % 10) * (tempNum % 10);
-            tempNum = Math.floor(tempNum / 10);
+        while (pickedNumber >= 1) {
+            tempSum = tempSum + (pickedNumber % 10) * (pickedNumber % 10);
+            pickedNumber = Math.floor(pickedNumber / 10);
         }
         return tempSum;
     }
