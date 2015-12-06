@@ -7,8 +7,7 @@ console.log(string_parameterize("Robin Singh from USA."));
 "use string";
 (function () {
     function stringParam(pickedString) {
-        pickedString = pickedString.toLowerCase().split(" ");
-        return pickedString.join("-");
+        return pickedString.toLowerCase().split(" ").join("-");
     }
     console.log(stringParam("Robin Singh from USA."));
 })();
