@@ -12,11 +12,9 @@ console.log(capitalize_Words('js string exercises'));
         }
 
         pickedString = pickedString.split(" ");
-        var finalString = pickedString.map(function (x) {
-            x = firstLetter(x);
-            return x;
-        });
-        return finalString.join(" ");
+        return pickedString.map(function (x) {
+            return firstLetter(x);
+        }).join(" ");
     }
     console.log(capitalizeWord('js string exercises'));
 })();

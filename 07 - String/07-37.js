@@ -6,3 +6,13 @@ true
 console.log(compare_strings('ABCD', 'Abce'));
 false
 */
+
+"use strict";
+(function () {
+    function compareStrings(firstString, secondString) {
+        return firstString.toLowerCase() === secondString.toLowerCase();
+    }
+    
+    console.log(compareStrings('abcd', 'AbcD'));
+    console.log(compareStrings('ABCD', 'Abce'));
+})();

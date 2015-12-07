@@ -7,8 +7,7 @@ console.log(capitalize('js string exercises'));
 "use strict";
 (function () {
     function capitalize(pickedString) {
-        pickedString = pickedString[0].toUpperCase() + pickedString.slice(1);
-        return pickedString;
+        return pickedString[0].toUpperCase() + pickedString.slice(1);
     }
     console.log(capitalize('js string exercises'));
 })();
