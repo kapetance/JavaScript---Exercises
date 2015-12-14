@@ -2,3 +2,10 @@
 Test Data :
 console.log(sqrt_to_int(17));
 4 */
+"use strict";
+(function () {
+    function sqrtToInt(pickedNumber) {
+        return Math.round(Math.sqrt(pickedNumber));
+    }
+    console.log(sqrtToInt(17));
+})();

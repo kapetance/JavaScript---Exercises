@@ -5,3 +5,11 @@ console.log(number_test(25.66));
 "Number has a decimal place."
 console.log(number_test(10));
 "It is a whole number." */
+"use strict";
+(function () {
+    function numberTest(pickedNumber) {
+        return pickedNumber === Math.round(pickedNumber) ? "It is a whole number." : "Number has a decimal place.";
+    }
+    console.log(numberTest(25.66));
+    console.log(numberTest(10));
+})();
