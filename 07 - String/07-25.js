@@ -6,3 +6,14 @@ console.log(alphabetize_string('United States'));
 Output :
 "SUadeeinsttt"
 */
+"use strict";
+(function () {
+    function alphabetize(pickedString) {
+        return pickedString.split(" ").map(function (i) {
+            return i.split("");
+        }).reduce(function (i, j) {
+            return i.concat(j);
+        }).sort().join("");
+    }
+    console.log(alphabetize("United States"));
+})();
