@@ -9,3 +9,13 @@ Output :
 "w3resource"
 "w3resource"
 */
+
+"use strict";
+(function () {
+    function strip(pickedString) {
+        return pickedString.trim();
+    }
+    console.log(strip('w3resource '));
+    console.log(strip(' w3resource'));
+    console.log(strip(' w3resource '));
+})();
