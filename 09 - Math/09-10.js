@@ -7,3 +7,17 @@ console.log(lcm_two_numbers(10,15));
 Output :
 15 
 30 */
+"use strict";
+(function () {
+    function lcmTwoNumbers(first, second) {
+        var lowest = Math.min(first, second);
+        var highest = Math.max(first, second);
+        for (var x = 1; x <= highest; x++) {
+            if (x * lowest % highest === 0) {
+                return x * lowest;
+            }
+        }
+    }
+    console.log(lcmTwoNumbers(3, 15));
+    console.log(lcmTwoNumbers(10, 15));
+})();
