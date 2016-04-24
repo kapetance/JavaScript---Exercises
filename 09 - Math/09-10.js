@@ -5,5 +5,5 @@ Test Data :
 console.log(lcm_two_numbers(3,15));
 console.log(lcm_two_numbers(10,15));
 Output :
-15
+15 
 30 */
