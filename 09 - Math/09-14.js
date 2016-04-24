@@ -7,3 +7,13 @@ Output :
 "12.38"
 "12.37"
 "-10.308" */
+"use strict";
+(function () {
+    function preciseRound(pickedNumber, decimalPlaces) {
+        return pickedNumber.toFixed(decimalPlaces);
+    }
+
+    console.log(preciseRound(12.375, 2));
+    console.log(preciseRound(12.37499, 2));
+    console.log(preciseRound(-10.3079499, 3));
+})();

@@ -12,3 +12,13 @@ false
 true
 false
 false */
+"use strict";
+(function () {
+    function isNatural(pickedNumber) {
+        return pickedNumber > 0 && pickedNumber === Math.round(pickedNumber)&&isFinite(pickedNumber);
+    }
+    console.log(isNatural(-15));
+    console.log(isNatural(1));
+    console.log(isNatural(10.22));
+    console.log(isNatural(10 / 0));
+})();
