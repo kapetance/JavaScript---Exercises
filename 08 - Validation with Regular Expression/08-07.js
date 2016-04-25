@@ -1,0 +1,1 @@
+/*Write a JavaScript function to check whether a given value is IP value or not. */

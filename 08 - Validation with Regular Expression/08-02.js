@@ -1,0 +1,1 @@
+/*Write a JavaScript program to check a credit card number. */

@@ -1,0 +1,1 @@
+/**Write a JavaScript function to check whether a given value is a social security number or not. */
