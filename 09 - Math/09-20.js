@@ -10,3 +10,20 @@ console.log(binomial(10,2));
 Output :
 56
 45 */
+"use strict";
+(function () {
+    function fact(pickedNumber) {
+        if (pickedNumber === 1) {
+            return 1
+        } else {
+            return pickedNumber * fact(pickedNumber - 1);
+        }
+    }
+
+    function binomial(n, k) {
+        return fact(n) / (fact(n - k) * fact(k));
+    }
+
+    console.log(binomial(8, 3));
+    console.log(binomial(10, 2));
+})();

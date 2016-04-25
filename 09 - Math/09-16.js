@@ -13,3 +13,16 @@ true
 false
 true
 true  */
+"use strict";
+(function () {
+    function isNumeric(pickedNumber) {
+        return !isNaN(parseFloat(pickedNumber));
+    }
+
+    console.log(isNumeric(12));
+    console.log(isNumeric('abcd'));
+    console.log(isNumeric('12'));
+    console.log(isNumeric(' '));
+    console.log(isNumeric(1.20));
+    console.log(isNumeric(-200));
+})();
