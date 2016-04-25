@@ -6,3 +6,12 @@ console.log(result);
 var a = 5.0001000;
 console.log(result);
 5.0001 */
+"use strict";
+(function () {
+    function roundFloat(pickedNumber, digitsNumber) {
+        return pickedNumber.toFixed(digitsNumber);
+    }
+
+    console.log(roundFloat(-4.55555, 4))
+    console.log(roundFloat(5.000100, 4))
+})();
