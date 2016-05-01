@@ -11,3 +11,35 @@ console.log(humanize_format(402));
 "301st"
 "402nd"
 */
+"use strict";
+(function () {
+    function humanized(pickedNumber) {
+
+        if (typeof pickedNumber === "number") {
+            pickedNumber = "" + pickedNumber;
+        } else {
+            return "No number";
+        }
+        var add = "";
+        switch (pickedNumber.slice(-1)) {
+            case "1":
+                add = "st";
+                break;
+            case "2":
+                add = "nd";
+                break;
+            case "3":
+                add = "rd";
+                break;
+            default:
+                add = "th";
+        }
+        return pickedNumber + add;
+    }
+
+    console.log(humanized());
+    console.log(humanized(1));
+    console.log(humanized(8));
+    console.log(humanized(301));
+    console.log(humanized(402));
+})();
